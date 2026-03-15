@@ -1,0 +1,164 @@
+﻿@model cinisatissitesi.Models.Cini
+
+@{
+    ViewData["Title"] = "Yeni Çini Ekle";
+}
+
+<div class="container py-5">
+    <div class="form-card shadow-sm">
+        <div class="form-header">
+            <span class="form-badge">Admin Panel</span>
+            <h1>Yeni Çini Ekle</h1>
+            <p>Mağazada yayınlanacak yeni ürün bilgilerini girin.</p>
+        </div>
+
+        <form asp-controller="Cinis" asp-action="Create" method="post" class="mt-4">
+            @Html.AntiForgeryToken()
+
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label asp-for="Ad" class="form-label">Ürün Adı</label>
+                    <input asp-for="Ad" class="form-control custom-input" />
+                    <span asp-validation-for="Ad" class="text-danger"></span>
+                </div>
+
+                <div class="col-md-6">
+                    <label asp-for="Kategori" class="form-label">Kategori</label>
+                    <input asp-for="Kategori" class="form-control custom-input" />
+                    <span asp-validation-for="Kategori" class="text-danger"></span>
+                </div>
+
+                <div class="col-md-6">
+                    <label asp-for="Fiyat" class="form-label">Fiyat</label>
+                    <input asp-for="Fiyat" class="form-control custom-input" type="number" step="0.01" />
+                    <span asp-validation-for="Fiyat" class="text-danger"></span>
+                </div>
+
+                <div class="col-md-6">
+                    <label asp-for="Stok" class="form-label">Stok</label>
+                    <input asp-for="Stok" class="form-control custom-input" type="number" />
+                    <span asp-validation-for="Stok" class="text-danger"></span>
+                </div>
+
+                <div class="col-12">
+                    <label asp-for="ResimUrl" class="form-label">Resim URL</label>
+                    <input asp-for="ResimUrl" class="form-control custom-input" />
+                    <span asp-validation-for="ResimUrl" class="text-danger"></span>
+                </div>
+
+                <div class="col-12">
+                    <label asp-for="Aciklama" class="form-label">Açıklama</label>
+                    <textarea asp-for="Aciklama" class="form-control custom-input" rows="5"></textarea>
+                    <span asp-validation-for="Aciklama" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-actions mt-4">
+                <button type="submit" class="btn save-btn">Kaydet</button>
+                <a asp-controller="Cinis" asp-action="Index" class="btn back-btn">Listeye Dön</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<style>
+    body {
+        background: linear-gradient(180deg, #f8fafc 0%, #eef6f7 100%);
+    }
+
+    .form-card {
+        background: white;
+        border-radius: 24px;
+        padding: 32px;
+        border: 1px solid #e2e8f0;
+        max-width: 950px;
+        margin: 0 auto;
+    }
+
+    .form-header {
+        background: linear-gradient(135deg, #0f172a, #1d4ed8, #0f766e);
+        color: white;
+        border-radius: 20px;
+        padding: 26px;
+        margin-bottom: 10px;
+    }
+
+    .form-badge {
+        display: inline-block;
+        background: rgba(255,255,255,0.14);
+        border: 1px solid rgba(255,255,255,0.2);
+        padding: 7px 13px;
+        border-radius: 999px;
+        font-size: 13px;
+        margin-bottom: 14px;
+    }
+
+    .form-header h1 {
+        font-size: 32px;
+        font-weight: 800;
+        margin-bottom: 8px;
+    }
+
+    .form-header p {
+        margin: 0;
+        opacity: 0.92;
+    }
+
+    .custom-input {
+        min-height: 48px;
+        border-radius: 14px;
+        border: 1px solid #cbd5e1;
+        padding: 10px 14px;
+    }
+
+    textarea.custom-input {
+        min-height: 140px;
+    }
+
+    .custom-input:focus {
+        border-color: #1d4ed8;
+        box-shadow: 0 0 0 0.2rem rgba(29,78,216,0.12);
+    }
+
+    .form-actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .save-btn {
+        background: linear-gradient(135deg, #0f766e, #1d4ed8);
+        color: white;
+        border: none;
+        border-radius: 14px;
+        padding: 12px 22px;
+        font-weight: 600;
+    }
+
+        .save-btn:hover {
+            color: white;
+            opacity: 0.95;
+        }
+
+    .back-btn {
+        background: #f8fafc;
+        color: #0f172a;
+        border: 1px solid #e2e8f0;
+        border-radius: 14px;
+        padding: 12px 22px;
+        font-weight: 600;
+    }
+
+        .back-btn:hover {
+            color: #0f172a;
+            background: #f1f5f9;
+        }
+</style>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

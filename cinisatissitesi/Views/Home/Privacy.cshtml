@@ -1,0 +1,228 @@
+﻿@{
+    ViewData["Title"] = "Hakkında";
+}
+
+<div class="about-page">
+    <section class="about-hero">
+        <div class="container">
+            <div class="about-hero-content">
+                <span class="about-badge">ÇiniSatış</span>
+                <h1>Sanatı ve Zarafeti Bir Araya Getiriyoruz</h1>
+                <p>
+                    ÇiniSatış, geleneksel çini sanatını modern mağaza deneyimiyle buluşturan özel bir platformdur.
+                    Her ürün estetik, kalite ve özgün tasarım anlayışıyla sunulur.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-content container py-5">
+        <div class="row g-4">
+            <div class="col-lg-7">
+                <div class="about-card shadow-sm h-100">
+                    <h2>Biz Kimiz?</h2>
+                    <p>
+                        ÇiniSatış, dekoratif çini ürünlerini daha ulaşılabilir, düzenli ve modern bir dijital mağaza deneyimiyle
+                        sunmak amacıyla oluşturulmuştur. Geleneksel motifleri çağdaş sunumla birleştirerek kullanıcıya hem estetik
+                        hem de güven veren bir alışveriş ortamı sağlamayı hedefler.
+                    </p>
+                    <p>
+                        Bu projede ürünler yönetim paneli üzerinden eklenir, düzenlenir ve silinir. Mağaza kısmında ise tüm ürünler
+                        veritabanından dinamik olarak çekilerek ziyaretçilere gösterilir.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="about-card shadow-sm h-100">
+                    <h2>Vizyonumuz</h2>
+                    <p>
+                        Çini sanatını dijital dünyada daha güçlü bir şekilde temsil etmek, özel tasarım ürünleri daha fazla kişiye
+                        ulaştırmak ve klasik el sanatlarını modern kullanıcı deneyimiyle birleştirmek.
+                    </p>
+
+                    <div class="mini-stats">
+                        <div class="mini-box">
+                            <strong>Özgün</strong>
+                            <span>Tasarım</span>
+                        </div>
+                        <div class="mini-box">
+                            <strong>Kaliteli</strong>
+                            <span>Sunum</span>
+                        </div>
+                        <div class="mini-box">
+                            <strong>Modern</strong>
+                            <span>Altyapı</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-card shadow-sm mt-4">
+            <h2>Neler Sunuyoruz?</h2>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>Özel Tasarım Ürünler</h3>
+                    <p>Her biri estetik detaylarla hazırlanmış dekoratif ve şık çini ürünleri.</p>
+                </div>
+
+                <div class="feature-item">
+                    <h3>Kolay Yönetim Paneli</h3>
+                    <p>Admin tarafında ürün ekleme, silme, düzenleme ve detay yönetimi.</p>
+                </div>
+
+                <div class="feature-item">
+                    <h3>Modern Mağaza Deneyimi</h3>
+                    <p>Kullanıcı dostu arayüz ile ürünlerin sade ve şık şekilde sunulması.</p>
+                </div>
+
+                <div class="feature-item">
+                    <h3>Dinamik Veritabanı Yapısı</h3>
+                    <p>Eklenen ürünlerin otomatik olarak mağaza ve detay sayfasında gösterilmesi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<style>
+    body {
+        background: linear-gradient(180deg, #f8fafc 0%, #eef6f7 100%);
+    }
+
+    .about-hero {
+        position: relative;
+        padding: 90px 0 80px 0;
+        background: linear-gradient(135deg, #0f172a, #1d4ed8, #0f766e);
+        border-bottom-left-radius: 28px;
+        border-bottom-right-radius: 28px;
+        overflow: hidden;
+    }
+
+    .about-hero-content {
+        max-width: 760px;
+        color: white;
+    }
+
+    .about-badge {
+        display: inline-block;
+        background: rgba(255,255,255,0.14);
+        border: 1px solid rgba(255,255,255,0.22);
+        padding: 8px 14px;
+        border-radius: 999px;
+        font-size: 13px;
+        margin-bottom: 18px;
+    }
+
+    .about-hero-content h1 {
+        font-size: 48px;
+        font-weight: 800;
+        line-height: 1.15;
+        margin-bottom: 18px;
+    }
+
+    .about-hero-content p {
+        font-size: 17px;
+        line-height: 1.8;
+        opacity: 0.95;
+        margin: 0;
+    }
+
+    .about-card {
+        background: white;
+        border-radius: 24px;
+        padding: 30px;
+        border: 1px solid #e2e8f0;
+    }
+
+        .about-card h2 {
+            font-size: 30px;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 16px;
+        }
+
+        .about-card p {
+            color: #64748b;
+            line-height: 1.9;
+            margin-bottom: 14px;
+        }
+
+    .mini-stats {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 24px;
+    }
+
+    .mini-box {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 16px;
+        padding: 14px 18px;
+        min-width: 110px;
+        text-align: center;
+    }
+
+        .mini-box strong {
+            display: block;
+            color: #0f172a;
+            font-size: 17px;
+        }
+
+        .mini-box span {
+            font-size: 13px;
+            color: #64748b;
+        }
+
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+        margin-top: 20px;
+    }
+
+    .feature-item {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 18px;
+        padding: 22px;
+    }
+
+        .feature-item h3 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 10px;
+        }
+
+        .feature-item p {
+            margin: 0;
+            color: #64748b;
+            line-height: 1.7;
+        }
+
+    @@media (max-width: 991px) {
+        .about-hero-content h1 {
+            font-size: 38px;
+        }
+    }
+
+    @@media (max-width: 768px) {
+        .about-hero {
+            padding: 70px 0 60px 0;
+            border-bottom-left-radius: 22px;
+            border-bottom-right-radius: 22px;
+        }
+
+        .about-hero-content h1 {
+            font-size: 30px;
+        }
+
+        .features-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>

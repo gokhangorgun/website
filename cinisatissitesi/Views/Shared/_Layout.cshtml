@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Çini Satış</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/cinisatissitesi.styles.css" asp-append-version="true" />
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #0f172a;
+        }
+
+        .custom-navbar {
+            background: rgba(15, 23, 42, 0.88);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            padding-top: 14px;
+            padding-bottom: 14px;
+        }
+
+        .navbar-brand.custom-brand {
+            font-size: 28px;
+            font-weight: 800;
+            color: white !important;
+            letter-spacing: 0.3px;
+        }
+
+        .brand-accent {
+            color: #67e8f9;
+        }
+
+        .navbar-nav .nav-link.custom-link {
+            color: rgba(255,255,255,0.86) !important;
+            font-weight: 500;
+            margin-left: 10px;
+            margin-right: 10px;
+            transition: 0.25s ease;
+        }
+
+            .navbar-nav .nav-link.custom-link:hover {
+                color: white !important;
+            }
+
+        .admin-btn {
+            background: linear-gradient(135deg, #0f766e, #1d4ed8);
+            color: white !important;
+            border-radius: 12px;
+            padding: 10px 16px !important;
+            font-weight: 600;
+            margin-left: 12px;
+        }
+
+            .admin-btn:hover {
+                opacity: 0.95;
+            }
+
+        main {
+            min-height: calc(100vh - 160px);
+        }
+
+        .footer-custom {
+            background: #0f172a;
+            color: rgba(255,255,255,0.75);
+            border-top: 1px solid rgba(255,255,255,0.06);
+        }
+
+            .footer-custom a {
+                color: #67e8f9;
+                text-decoration: none;
+            }
+
+                .footer-custom a:hover {
+                    color: white;
+                }
+
+        @@media (max-width: 991px) {
+            .admin-btn {
+                margin-top: 10px;
+                margin-left: 0;
+                display: inline-block;
+            }
+
+            .navbar-nav .nav-link.custom-link {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container">
+                <a class="navbar-brand custom-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    Çini <span class="brand-accent">Satış</span>
+                </a>
+
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link custom-link" asp-controller="Home" asp-action="Index">Ana Sayfa</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link custom-link" asp-controller="Home" asp-action="Index" asp-fragment="urunler">Mağaza</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link custom-link" asp-controller="Home" asp-action="Privacy">Hakkında</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link admin-btn" asp-controller="Account" asp-action="Login">Admin Giriş</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main">
+        @RenderBody()
+    </main>
+
+    <footer class="footer-custom py-4 mt-5">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+            <div>
+                &copy; 2026 - ÇiniSatış
+            </div>
+            <div>
+                El yapımı çini ürünleri ve özel tasarım koleksiyonlar
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

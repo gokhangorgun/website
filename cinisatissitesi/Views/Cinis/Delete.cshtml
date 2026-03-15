@@ -1,0 +1,104 @@
+﻿@model cinisatissitesi.Models.Cini
+
+@{
+    ViewData["Title"] = "Çini Sil";
+}
+
+<div class="container py-5">
+    <div class="delete-card shadow-sm">
+        <span class="delete-badge">Dikkat</span>
+        <h1>Bu ürünü silmek istediğine emin misin?</h1>
+        <p>Bu işlem geri alınamaz. Silmeden önce ürün bilgilerini kontrol et.</p>
+
+        <div class="info-grid mt-4">
+            <div class="info-item"><strong>Ürün:</strong> @Model.Ad</div>
+            <div class="info-item"><strong>Kategori:</strong> @Model.Kategori</div>
+            <div class="info-item"><strong>Fiyat:</strong> @Model.Fiyat ₺</div>
+            <div class="info-item"><strong>Stok:</strong> @Model.Stok</div>
+        </div>
+
+        <form asp-action="Delete" class="mt-4">
+            <input type="hidden" asp-for="Id" />
+            <div class="d-flex gap-2 flex-wrap">
+                <button type="submit" class="btn confirm-delete-btn">Sil</button>
+                <a asp-action="Index" class="btn back-btn">Vazgeç</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<style>
+    .delete-card {
+        background: white;
+        border-radius: 24px;
+        padding: 36px;
+        border: 1px solid #e2e8f0;
+        max-width: 850px;
+        margin: 0 auto;
+    }
+
+    .delete-badge {
+        display: inline-block;
+        background: #fff1f2;
+        color: #e11d48;
+        border: 1px solid #fecdd3;
+        padding: 7px 13px;
+        border-radius: 999px;
+        font-size: 13px;
+        margin-bottom: 16px;
+        font-weight: 700;
+    }
+
+    .delete-card h1 {
+        font-size: 32px;
+        font-weight: 800;
+        color: #0f172a;
+        margin-bottom: 10px;
+    }
+
+    .delete-card p {
+        color: #64748b;
+        margin-bottom: 0;
+    }
+
+    .info-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+
+    .info-item {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 16px;
+        padding: 16px;
+    }
+
+    .confirm-delete-btn {
+        background: linear-gradient(135deg, #e11d48, #be123c);
+        color: white;
+        border: none;
+        border-radius: 14px;
+        padding: 12px 22px;
+        font-weight: 600;
+    }
+
+    .back-btn {
+        background: #f8fafc;
+        color: #0f172a;
+        border: 1px solid #e2e8f0;
+        border-radius: 14px;
+        padding: 12px 22px;
+        font-weight: 600;
+    }
+
+    @@media (max-width: 768px) {
+        .info-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .delete-card h1 {
+            font-size: 26px;
+        }
+    }
+</style>

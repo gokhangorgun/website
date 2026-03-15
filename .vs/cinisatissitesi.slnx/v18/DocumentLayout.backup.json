@@ -1,0 +1,181 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gorgu\\OneDrive\\Masa\u00FCst\u00FC\\CiniProjesi\\cinisatissitesi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8D0B601F-EBB8-332D-F090-C304422F5645}|cinisatissitesi\\cinisatissitesi.csproj|c:\\users\\gorgu\\onedrive\\masa\u00FCst\u00FC\\ciniprojesi\\cinisatissitesi\\cinisatissitesi\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D0B601F-EBB8-332D-F090-C304422F5645}|cinisatissitesi\\cinisatissitesi.csproj|solutionrelative:cinisatissitesi\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D0B601F-EBB8-332D-F090-C304422F5645}|cinisatissitesi\\cinisatissitesi.csproj|c:\\users\\gorgu\\onedrive\\masa\u00FCst\u00FC\\ciniprojesi\\cinisatissitesi\\cinisatissitesi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D0B601F-EBB8-332D-F090-C304422F5645}|cinisatissitesi\\cinisatissitesi.csproj|solutionrelative:cinisatissitesi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D0B601F-EBB8-332D-F090-C304422F5645}|cinisatissitesi\\cinisatissitesi.csproj|c:\\users\\gorgu\\onedrive\\masa\u00FCst\u00FC\\ciniprojesi\\cinisatissitesi\\cinisatissitesi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D0B601F-EBB8-332D-F090-C304422F5645}|cinisatissitesi\\cinisatissitesi.csproj|solutionrelative:cinisatissitesi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D0B601F-EBB8-332D-F090-C304422F5645}|cinisatissitesi\\cinisatissitesi.csproj|c:\\users\\gorgu\\onedrive\\masa\u00FCst\u00FC\\ciniprojesi\\cinisatissitesi\\cinisatissitesi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8D0B601F-EBB8-332D-F090-C304422F5645}|cinisatissitesi\\cinisatissitesi.csproj|solutionrelative:cinisatissitesi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D0B601F-EBB8-332D-F090-C304422F5645}|cinisatissitesi\\cinisatissitesi.csproj|c:\\users\\gorgu\\onedrive\\masa\u00FCst\u00FC\\ciniprojesi\\cinisatissitesi\\cinisatissitesi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D0B601F-EBB8-332D-F090-C304422F5645}|cinisatissitesi\\cinisatissitesi.csproj|solutionrelative:cinisatissitesi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D0B601F-EBB8-332D-F090-C304422F5645}|cinisatissitesi\\cinisatissitesi.csproj|c:\\users\\gorgu\\onedrive\\masa\u00FCst\u00FC\\ciniprojesi\\cinisatissitesi\\cinisatissitesi\\models\\adminuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D0B601F-EBB8-332D-F090-C304422F5645}|cinisatissitesi\\cinisatissitesi.csproj|solutionrelative:cinisatissitesi\\models\\adminuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D0B601F-EBB8-332D-F090-C304422F5645}|cinisatissitesi\\cinisatissitesi.csproj|c:\\users\\gorgu\\onedrive\\masa\u00FCst\u00FC\\ciniprojesi\\cinisatissitesi\\cinisatissitesi\\models\\cini.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D0B601F-EBB8-332D-F090-C304422F5645}|cinisatissitesi\\cinisatissitesi.csproj|solutionrelative:cinisatissitesi\\models\\cini.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D0B601F-EBB8-332D-F090-C304422F5645}|cinisatissitesi\\cinisatissitesi.csproj|c:\\users\\gorgu\\onedrive\\masa\u00FCst\u00FC\\ciniprojesi\\cinisatissitesi\\cinisatissitesi\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D0B601F-EBB8-332D-F090-C304422F5645}|cinisatissitesi\\cinisatissitesi.csproj|solutionrelative:cinisatissitesi\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D0B601F-EBB8-332D-F090-C304422F5645}|cinisatissitesi\\cinisatissitesi.csproj|c:\\users\\gorgu\\onedrive\\masa\u00FCst\u00FC\\ciniprojesi\\cinisatissitesi\\cinisatissitesi\\controllers\\ciniscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D0B601F-EBB8-332D-F090-C304422F5645}|cinisatissitesi\\cinisatissitesi.csproj|solutionrelative:cinisatissitesi\\controllers\\ciniscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D0B601F-EBB8-332D-F090-C304422F5645}|cinisatissitesi\\cinisatissitesi.csproj|c:\\users\\gorgu\\onedrive\\masa\u00FCst\u00FC\\ciniprojesi\\cinisatissitesi\\cinisatissitesi\\migrations\\20260307200013_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D0B601F-EBB8-332D-F090-C304422F5645}|cinisatissitesi\\cinisatissitesi.csproj|solutionrelative:cinisatissitesi\\migrations\\20260307200013_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\gorgu\\OneDrive\\Masa\u00FCst\u00FC\\CiniProjesi\\cinisatissitesi\\cinisatissitesi\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "cinisatissitesi\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\gorgu\\OneDrive\\Masa\u00FCst\u00FC\\CiniProjesi\\cinisatissitesi\\cinisatissitesi\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "cinisatissitesi\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-07T20:27:17.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\gorgu\\OneDrive\\Masa\u00FCst\u00FC\\CiniProjesi\\cinisatissitesi\\cinisatissitesi\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "cinisatissitesi\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\gorgu\\OneDrive\\Masa\u00FCst\u00FC\\CiniProjesi\\cinisatissitesi\\cinisatissitesi\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "cinisatissitesi\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-07T20:23:01.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CinisController.cs",
+              "DocumentMoniker": "C:\\Users\\gorgu\\OneDrive\\Masa\u00FCst\u00FC\\CiniProjesi\\cinisatissitesi\\cinisatissitesi\\Controllers\\CinisController.cs",
+              "RelativeDocumentMoniker": "cinisatissitesi\\Controllers\\CinisController.cs",
+              "ToolTip": "C:\\Users\\gorgu\\OneDrive\\Masa\u00FCst\u00FC\\CiniProjesi\\cinisatissitesi\\cinisatissitesi\\Controllers\\CinisController.cs",
+              "RelativeToolTip": "cinisatissitesi\\Controllers\\CinisController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwIgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-07T20:12:02.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\gorgu\\OneDrive\\Masa\u00FCst\u00FC\\CiniProjesi\\cinisatissitesi\\cinisatissitesi\\appsettings.json",
+              "RelativeDocumentMoniker": "cinisatissitesi\\appsettings.json",
+              "ToolTip": "C:\\Users\\gorgu\\OneDrive\\Masa\u00FCst\u00FC\\CiniProjesi\\cinisatissitesi\\cinisatissitesi\\appsettings.json",
+              "RelativeToolTip": "cinisatissitesi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-07T20:04:22.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20260307200013_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\gorgu\\OneDrive\\Masa\u00FCst\u00FC\\CiniProjesi\\cinisatissitesi\\cinisatissitesi\\Migrations\\20260307200013_InitialCreate.cs",
+              "RelativeDocumentMoniker": "cinisatissitesi\\Migrations\\20260307200013_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\gorgu\\OneDrive\\Masa\u00FCst\u00FC\\CiniProjesi\\cinisatissitesi\\cinisatissitesi\\Migrations\\20260307200013_InitialCreate.cs",
+              "RelativeToolTip": "cinisatissitesi\\Migrations\\20260307200013_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-07T20:00:13.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdminUser.cs",
+              "DocumentMoniker": "C:\\Users\\gorgu\\OneDrive\\Masa\u00FCst\u00FC\\CiniProjesi\\cinisatissitesi\\cinisatissitesi\\Models\\AdminUser.cs",
+              "RelativeDocumentMoniker": "cinisatissitesi\\Models\\AdminUser.cs",
+              "ToolTip": "C:\\Users\\gorgu\\OneDrive\\Masa\u00FCst\u00FC\\CiniProjesi\\cinisatissitesi\\cinisatissitesi\\Models\\AdminUser.cs",
+              "RelativeToolTip": "cinisatissitesi\\Models\\AdminUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-07T19:56:58.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Cini.cs",
+              "DocumentMoniker": "C:\\Users\\gorgu\\OneDrive\\Masa\u00FCst\u00FC\\CiniProjesi\\cinisatissitesi\\cinisatissitesi\\Models\\Cini.cs",
+              "RelativeDocumentMoniker": "cinisatissitesi\\Models\\Cini.cs",
+              "ToolTip": "C:\\Users\\gorgu\\OneDrive\\Masa\u00FCst\u00FC\\CiniProjesi\\cinisatissitesi\\cinisatissitesi\\Models\\Cini.cs",
+              "RelativeToolTip": "cinisatissitesi\\Models\\Cini.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-07T19:55:36.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\gorgu\\OneDrive\\Masa\u00FCst\u00FC\\CiniProjesi\\cinisatissitesi\\cinisatissitesi\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "cinisatissitesi\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\gorgu\\OneDrive\\Masa\u00FCst\u00FC\\CiniProjesi\\cinisatissitesi\\cinisatissitesi\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "cinisatissitesi\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-07T19:55:22.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gorgu\\OneDrive\\Masa\u00FCst\u00FC\\CiniProjesi\\cinisatissitesi\\cinisatissitesi\\Program.cs",
+              "RelativeDocumentMoniker": "cinisatissitesi\\Program.cs",
+              "ToolTip": "C:\\Users\\gorgu\\OneDrive\\Masa\u00FCst\u00FC\\CiniProjesi\\cinisatissitesi\\cinisatissitesi\\Program.cs",
+              "RelativeToolTip": "cinisatissitesi\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-07T19:51:18.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\gorgu\\OneDrive\\Masa\u00FCst\u00FC\\CiniProjesi\\cinisatissitesi\\cinisatissitesi\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "cinisatissitesi\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\gorgu\\OneDrive\\Masa\u00FCst\u00FC\\CiniProjesi\\cinisatissitesi\\cinisatissitesi\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "cinisatissitesi\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-07T19:49:42.422Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

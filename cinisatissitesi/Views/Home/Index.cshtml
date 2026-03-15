@@ -1,0 +1,415 @@
+﻿@model List<cinisatissitesi.Models.Cini>
+
+@{
+    ViewData["Title"] = "ÇiniSatış Mağaza";
+}
+
+<div class="store-page">
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="hero-badge">Özel Koleksiyon</span>
+                <h1>El Yapımı Çini Sanatını Keşfedin</h1>
+                <p>
+                    Geleneksel zarafet ile modern tasarımı bir araya getiren özel çini koleksiyonlarımızı inceleyin.
+                </p>
+                <a href="#urunler" class="btn hero-btn">Ürünleri İncele</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="intro-section container">
+        <div class="intro-card shadow-sm">
+            <div>
+                <h2>Çini Satış Mağazası</h2>
+                <p>
+                    El işçiliğiyle hazırlanan dekoratif çiniler, duvar panoları ve özel tasarım ürünler burada.
+                </p>
+            </div>
+            <div class="intro-stats">
+                <div class="stat-box">
+                    <strong>@(Model?.Count ?? 0)</strong>
+                    <span>Ürün</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="urunler" class="products-section container">
+        <div class="section-header">
+            <h2>Ürünler</h2>
+            <p>Mağazamızdaki öne çıkan çini ürünleri</p>
+        </div>
+
+        <div class="row g-4">
+            @if (Model != null && Model.Count > 0)
+            {
+                @foreach (var item in Model)
+                {
+                    <div class="col-md-6 col-lg-4">
+                        <div class="product-card shadow-sm h-100">
+                            <div class="product-image-wrapper">
+                                @if (!string.IsNullOrEmpty(item.ResimUrl))
+                                {
+                                    <img src="@item.ResimUrl" alt="@item.Ad" class="product-image" />
+                                }
+                                else
+                                {
+                                    <div class="no-image">Resim Yok</div>
+                                }
+                            </div>
+
+                            <div class="product-body">
+                                <div class="product-top">
+                                    <h3>@item.Ad</h3>
+                                    <span class="category-badge">@item.Kategori</span>
+                                </div>
+
+                                <p class="product-desc">
+                                    @item.Aciklama
+                                </p>
+
+                                <div class="product-meta">
+                                    <div>
+                                        <small>Fiyat</small>
+                                        <strong>@item.Fiyat ₺</strong>
+                                    </div>
+                                    <div>
+                                        <small>Stok</small>
+                                        <strong>@item.Stok</strong>
+                                    </div>
+                                </div>
+
+                                <div class="product-actions">
+                                    <a asp-controller="Urun" asp-action="Detay" asp-route-id="@item.Id" class="btn detail-btn">
+                                        İncele
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="col-12">
+                    <div class="empty-box shadow-sm">
+                        <h3>Henüz ürün eklenmemiş</h3>
+                        <p>Admin panelinden ürün eklediğinde burada görünecek.</p>
+                    </div>
+                </div>
+            }
+        </div>
+    </section>
+</div>
+
+<style>
+    body {
+        background: linear-gradient(180deg, #f8fafc 0%, #eef6f7 100%);
+    }
+
+    .store-page {
+        padding-bottom: 60px;
+    }
+
+    .hero-section {
+        position: relative;
+        min-height: 520px;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(135deg, rgba(15, 23, 42, 0.82), rgba(15, 118, 110, 0.72)), url('https://images.unsplash.com/photo-1517705008128-361805f42e86?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        overflow: hidden;
+    }
+
+    .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(135deg, rgba(15,118,110,0.22), rgba(29,78,216,0.18));
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-text {
+        max-width: 650px;
+        color: white;
+        padding: 40px 0;
+    }
+
+    .hero-badge {
+        display: inline-block;
+        background: rgba(255,255,255,0.14);
+        border: 1px solid rgba(255,255,255,0.25);
+        padding: 8px 14px;
+        border-radius: 999px;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+    .hero-text h1 {
+        font-size: 52px;
+        font-weight: 800;
+        line-height: 1.15;
+        margin-bottom: 18px;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+        line-height: 1.7;
+        opacity: 0.95;
+        margin-bottom: 28px;
+    }
+
+    .hero-btn {
+        background: linear-gradient(135deg, #0f766e, #1d4ed8);
+        color: white;
+        border: none;
+        padding: 13px 24px;
+        border-radius: 14px;
+        font-weight: 600;
+    }
+
+        .hero-btn:hover {
+            color: white;
+            opacity: 0.95;
+        }
+
+    .intro-section {
+        margin-top: -55px;
+        position: relative;
+        z-index: 3;
+    }
+
+    .intro-card {
+        background: white;
+        border-radius: 24px;
+        padding: 28px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+    }
+
+        .intro-card h2 {
+            margin-bottom: 8px;
+            color: #0f172a;
+            font-weight: 700;
+        }
+
+        .intro-card p {
+            margin: 0;
+            color: #64748b;
+        }
+
+    .intro-stats {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+    }
+
+    .stat-box {
+        min-width: 110px;
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 18px;
+        padding: 14px 18px;
+        text-align: center;
+    }
+
+        .stat-box strong {
+            display: block;
+            color: #0f172a;
+            font-size: 18px;
+        }
+
+        .stat-box span {
+            color: #64748b;
+            font-size: 13px;
+        }
+
+    .products-section {
+        margin-top: 50px;
+    }
+
+    .section-header {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+        .section-header h2 {
+            font-size: 36px;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 8px;
+        }
+
+        .section-header p {
+            color: #64748b;
+            margin: 0;
+        }
+
+    .product-card {
+        background: white;
+        border-radius: 22px;
+        overflow: hidden;
+        border: 1px solid #e2e8f0;
+        transition: 0.25s ease;
+    }
+
+        .product-card:hover {
+            transform: translateY(-4px);
+        }
+
+    .product-image-wrapper {
+        height: 260px;
+        background: #f1f5f9;
+        overflow: hidden;
+    }
+
+    .product-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .no-image {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #64748b;
+        font-weight: 600;
+    }
+
+    .product-body {
+        padding: 22px;
+    }
+
+    .product-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 12px;
+    }
+
+        .product-top h3 {
+            font-size: 22px;
+            margin: 0;
+            color: #0f172a;
+            font-weight: 700;
+        }
+
+    .category-badge {
+        white-space: nowrap;
+        background: #ecfeff;
+        color: #0f766e;
+        border: 1px solid #99f6e4;
+        padding: 6px 12px;
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .product-desc {
+        color: #64748b;
+        min-height: 72px;
+        line-height: 1.6;
+        margin-bottom: 18px;
+    }
+
+    .product-meta {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 18px;
+        padding: 14px;
+        border-radius: 16px;
+        background: #f8fafc;
+    }
+
+        .product-meta small {
+            display: block;
+            color: #64748b;
+            margin-bottom: 4px;
+        }
+
+        .product-meta strong {
+            color: #0f172a;
+            font-size: 17px;
+        }
+
+    .product-actions {
+        display: flex;
+    }
+
+    .detail-btn {
+        width: 100%;
+        background: linear-gradient(135deg, #0f766e, #1d4ed8);
+        color: white;
+        border-radius: 14px;
+        padding: 11px 18px;
+        font-weight: 600;
+        border: none;
+    }
+
+        .detail-btn:hover {
+            color: white;
+            opacity: 0.95;
+        }
+
+    .empty-box {
+        background: white;
+        border-radius: 24px;
+        padding: 50px 20px;
+        text-align: center;
+        border: 1px solid #e2e8f0;
+    }
+
+        .empty-box h3 {
+            color: #0f172a;
+            margin-bottom: 8px;
+        }
+
+        .empty-box p {
+            color: #64748b;
+            margin: 0;
+        }
+
+    @@media (max-width: 991px) {
+        .hero-text h1 {
+            font-size: 40px;
+        }
+
+        .intro-card {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    @@media (max-width: 768px) {
+        .hero-section {
+            min-height: 430px;
+            border-bottom-left-radius: 22px;
+            border-bottom-right-radius: 22px;
+        }
+
+        .hero-text h1 {
+            font-size: 32px;
+        }
+
+        .hero-text p {
+            font-size: 16px;
+        }
+
+        .product-image-wrapper {
+            height: 220px;
+        }
+    }
+</style>

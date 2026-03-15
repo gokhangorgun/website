@@ -1,0 +1,171 @@
+﻿@{
+    ViewData["Title"] = "Admin Giriş";
+}
+
+<div class="login-page">
+    <div class="login-card shadow-lg">
+        <div class="login-left">
+            <h1>Çini Satış</h1>
+            <p class="subtitle">Yönetim paneline giriş yapın</p>
+
+            <div class="info-box">
+                <h3>Admin Paneli</h3>
+                <p>Ürün ekleme, düzenleme ve silme işlemlerini buradan yapabilirsiniz.</p>
+            </div>
+        </div>
+
+        <div class="login-right">
+            <h2>Admin Giriş</h2>
+            <p class="form-text">Hesabınıza giriş yapın</p>
+
+            @if (ViewBag.Error != null)
+            {
+                <div class="alert alert-danger">
+                    @ViewBag.Error
+                </div>
+            }
+
+            <form method="post">
+                <div class="mb-3">
+                    <label class="form-label">Kullanıcı Adı</label>
+                    <input type="text" name="username" class="form-control custom-input" placeholder="Kullanıcı adınızı girin" />
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label">Şifre</label>
+                    <input type="password" name="password" class="form-control custom-input" placeholder="Şifrenizi girin" />
+                </div>
+
+                <button type="submit" class="btn login-btn w-100">Giriş Yap</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background: linear-gradient(135deg, #0f172a, #1e3a8a, #0f766e);
+        min-height: 100vh;
+    }
+
+    .login-page {
+        min-height: 85vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 15px;
+    }
+
+    .login-card {
+        width: 100%;
+        max-width: 950px;
+        background: white;
+        border-radius: 24px;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .login-left {
+        background: linear-gradient(135deg, #0f766e, #1d4ed8);
+        color: white;
+        padding: 60px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+        .login-left h1 {
+            font-size: 40px;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+    .subtitle {
+        font-size: 18px;
+        opacity: 0.9;
+        margin-bottom: 35px;
+    }
+
+    .info-box {
+        background: rgba(255,255,255,0.14);
+        border: 1px solid rgba(255,255,255,0.2);
+        padding: 20px;
+        border-radius: 16px;
+    }
+
+        .info-box h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .info-box p {
+            margin: 0;
+            line-height: 1.6;
+        }
+
+    .login-right {
+        padding: 60px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: #ffffff;
+    }
+
+        .login-right h2 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 8px;
+        }
+
+    .form-text {
+        color: #64748b;
+        margin-bottom: 25px;
+    }
+
+    .custom-input {
+        height: 48px;
+        border-radius: 12px;
+        border: 1px solid #cbd5e1;
+        padding-left: 14px;
+        font-size: 15px;
+    }
+
+        .custom-input:focus {
+            border-color: #1d4ed8;
+            box-shadow: 0 0 0 0.2rem rgba(29, 78, 216, 0.15);
+        }
+
+    .login-btn {
+        background: linear-gradient(135deg, #0f766e, #1d4ed8);
+        border: none;
+        height: 48px;
+        border-radius: 12px;
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+        transition: 0.3s ease;
+    }
+
+        .login-btn:hover {
+            opacity: 0.92;
+            transform: translateY(-1px);
+            color: white;
+        }
+
+    @@media (max-width: 768px) {
+        .login-card {
+            grid-template-columns: 1fr;
+        }
+
+        .login-left,
+        .login-right {
+            padding: 35px 25px;
+        }
+
+            .login-left h1 {
+                font-size: 30px;
+            }
+    }
+</style>
